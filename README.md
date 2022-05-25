@@ -16,5 +16,5 @@ Technology used:
 ----------
 History:
 
-Initial Version 1.0.o
+Initial Version 1.0.0
 ----------------
