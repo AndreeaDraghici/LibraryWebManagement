@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Library</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="icon" href="~/IMG/books.jfif" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+       #logo{
+          display: flex;
+          align-items: center;
+          min-height: 100vh;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        
+       }
+       .container {
+            border-radius: 25px;
+            background-color:#5F9EA0 ;
+            padding: 15px;
+            font-family: 'Pattaya', sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+      
+        body { 
+        background-position: center;
+        background-image: url("https://factory360.com/wp-content/uploads/2015/09/bigstock-open-book-83012912.jpg"); background-size: cover; }
+
+        ul{
+	        float: right;
+	        list-style-type: none;
+	        margin-top: 25px;
+        }
+
+        ul li{
+	        display: inline-block;
+        }
+
+        ul li a {
+          display: block;
+          color: rgb(16, 15, 17);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-style: italic;
+          font-weight: bold;
+          font-size: large;
+
+        }
+
+        li a:hover:not(.active) {
+          background-color: rgb(177, 0, 0);
+        }
+
+
+   </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <img src="data:image/png;base64,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">
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area=""  asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Messages" asp-action="Index">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Libraries" asp-action="Index">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
+                        </li>
+                    </ul>
+                     <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Library Management by Andreea Draghici - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

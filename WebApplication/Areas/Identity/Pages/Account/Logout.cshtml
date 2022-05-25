@@ -1,0 +1,92 @@
+﻿@page
+@model LogoutModel
+@{
+    ViewData["Title"] = "Log out";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #6c499a;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #da17e2;
+            }
+
+        .container {
+            border-radius: 5px;
+            background-color: #92a8d1;
+            padding: 10px;
+        }
+
+        ul{
+	        float: right;
+	        list-style-type: none;
+	        margin-top: 25px;
+        }
+
+        ul li{
+	        display: inline-block;
+        }
+
+        ul li a {
+          display: block;
+          color: rgb(16, 15, 17);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-style: italic;
+          font-weight: bold;
+          font-size: large;
+
+        }
+
+        li a:hover:not(.active) {
+          background-color: rgb(177, 0, 0);
+        }
+    </style>
+</head>
+
+<header>
+    <h1>@ViewData["Title"]</h1>
+    @{
+        if (User.Identity.IsAuthenticated)
+        {
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                <button type="submit" class="nav-link btn btn-link text-dark">Click here to Logout</button>
+            </form>
+        }
+        else
+        {
+            <p>You have successfully logged out of the application.</p>
+        }
+    }
+</header>

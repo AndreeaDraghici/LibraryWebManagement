@@ -1,0 +1,98 @@
+﻿@model WebApp.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #6c499a;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #da17e2;
+            }
+
+        .container {
+            border-radius: 5px;
+            background-color: #92a8d1;
+            padding: 10px;
+        }
+    </style>
+</head>
+<h1>Edit</h1>
+
+<h4>Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="book_id" />
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="publisher" class="control-label"></label>
+                <input asp-for="publisher" class="form-control" />
+                <span asp-validation-for="publisher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="category_type" class="control-label"></label>
+                <input asp-for="category_type" class="form-control" />
+                <span asp-validation-for="category_type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="stock_id" class="control-label"></label>
+                <input asp-for="stock_id" class="form-control" />
+                <span asp-validation-for="stock_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="message_id" class="control-label"></label>
+                <input asp-for="message_id" class="form-control" />
+                <span asp-validation-for="message_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

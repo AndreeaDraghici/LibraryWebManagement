@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <style>
+
+        h3 {
+            
+        }
+
+        button {
+            width: 180px;
+            color: #000;
+            font-size: 12px;
+            padding: 12px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+        }
+
+
+        #buton {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+
+
+            #buton:hover {
+                background-color: blue;
+                color: white;
+                font-weight: bold;
+                transform: translateY(5px);
+            }
+
+        .p {
+            width: 200px;
+            height: 220px;
+            display: inline-block;
+            border-radius: 20px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 3px;
+            transition: transform 0.5s;
+            background-position: center;
+	        background-size: 210px;
+        }
+
+        .center {
+            float: right;
+            z-index: 1;
+            padding-right: 30px;
+        }
+
+        .center1 {
+            z-index: 2;
+            
+        }
+
+        .col{
+	      flex-basis: content;
+        }
+
+        .row{
+	       display: flex;
+	       height: 88%;
+	       align-items: center;
+        }
+
+        .p:hover {
+            transform: translateY(-9px);
+            opacity: 0.9;
+        }
+
+        .display-4 {
+            font-family: 'Pattaya', sans-serif;
+        }
+        .display {
+            font-family: 'Pattaya', sans-serif;
+        }
+    </style>
+</head>
+
+<div class="text-center">
+    <h1 class="display-4">Library Management</h1>
+    
+</div>
+
+<div class="row ">
+    <div class="col">
+      
+     <button style="position:center;
+       display: inline-block;
+       cursor: pointer;
+       text-align: center;
+       outline: 1px;
+       color: red;
+       background-color: green;
+       border: none;
+       border-radius: 10px;
+       box-shadow: 0 7px #CCCCCC;" type="button" onclick="location.href='@Url.Action("index","Libraries")'">GO TO LIBRARY
+   </button>
+
+
+    </div>
+    <div class="col">
+        <div class="p">
+            <a class="center display" href="https://www.elefant.ro/tratat-de-istorie-a-religiilor_9fda4f4d-e996-440e-a7c4-847700c3a0e3?tracking=searchterm:tratat+de+istorie">TRATAT DE ISTORIE</a>
+            <img class="p center1"  src="~/IMG/TratatDeIstorie.jpg" />
+            
+        </div>
+
+        <div class="p ">
+            <a class="center display" href="https://www.elefant.ro/arta-fericirii-manual-de-viata_5e05b87a-5e83-4f66-8e98-c115bb52c4de?tracking=searchterm:arta+fericirii">ARTA FERICIRII</a>
+            <img class="p center1" src="~/IMG/ArtaFericirii.jpg" />
+        </div>
+
+        <div class="p ">
+             <a class="center display" href="https://www.elefant.ro/retelele-de-informatie-si-misterul-vietii_c0704e88-5bff-4480-8ccb-c9b40e6331a2">MISTERUL VIETII</a>
+            <img class="p center1" src="~/IMG/MisterulVietii.jpg" />
+        </div>
+
+        <br /> <br />
+
+        <div  class="p ">
+             <a class="center display" href="https://www.elefant.ro/cum-sa-fii-fericit-sau-macar-mai-putin-trist_e6f2bca3-66b7-485a-ba8f-6e17dcf4fb89?tracking=searchterm:cum+sa+fii+fericit">CUM SA FII FERICIT</a>
+            <img class="p center1"  src="~/IMG/CumSaFiiFericit.jpg" />
+        </div>
+
+        <div class="p ">
+            <a class="center display" href="https://www.elefant.ro/intre-doua-lumi_4a7034fb-819a-4ecc-aa57-ace1f299b2a0?tracking=searchterm:intre+doua+lumi">INTRE DOUA LUMI</a>
+            <img class="p center1" src="~/IMG/IntreDouaLumi.jpg" />
+        </div>
+
+        <div class="p ">
+            <a class="center display" href="https://www.elefant.ro/isus-al-meu_294f0728-9d36-415a-a126-4ca1fbd38a8e?tracking=searchterm:isus">ISUS</a>
+            <img class="p center1" src="~/IMG/Isus.jpg" />
+        </div>
+
+    </div>
+</div>
