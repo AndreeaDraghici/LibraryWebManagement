@@ -7,7 +7,14 @@ The website helps to manage the activity of a library / library in electronic fo
 
 Technology used:
 ---
-## 1.  ASP .NET CORE 6
-## 2.  HTML, CSS and JavaScript.
-## 3.  SQL Server.
-## 4.  C# 
+1.  ASP .NET CORE 6
+2.  HTML, CSS and JavaScript.
+3.  SQL Server.
+4.  C# 
+
+
+----------
+History:
+
+Initial Version 1.0.o
+----------------
