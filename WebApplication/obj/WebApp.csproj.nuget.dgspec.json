@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\WebApp.csproj": {}
+    "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\WebApp.csproj": {}
   },
   "projects": {
-    "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\WebApp.csproj": {
+    "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\WebApp.csproj",
+        "projectUniqueName": "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\WebApp.csproj",
+        "projectPath": "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\WebApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\obj\\",
+        "outputPath": "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

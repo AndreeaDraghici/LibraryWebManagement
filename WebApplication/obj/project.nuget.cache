@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "imabM/qF7h0CuWj3czJ2a9AMDcX0mUuuxMDetUxAwyB9BQCGnckm2k1f4Zt12xWvxPmsj72vfa5MvfHZiBYhAQ==",
+  "dgSpecHash": "XPWUc6xTc/IgZKVgPrhrAeyUJSX/vf1cE9T5kPVcmdioRtfdHzWHVort8LDOd/aKTcTS5L2e6uSfe+aFBmhf2w==",
   "success": true,
-  "projectFilePath": "D:\\Data\\Facultate\\Sem2\\PAW LAB\\BACKEND\\WebApplication\\WebApplication\\WebApp.csproj",
+  "projectFilePath": "D:\\Data\\Work\\Git Projects\\LibraryWebManagement\\WebApplication\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
