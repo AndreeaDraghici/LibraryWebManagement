@@ -5,7 +5,7 @@ The website helps to manage the activity of a library / library in electronic fo
 
 ## For more details about that application, see the https://github.com/AndreeaDraghici/LibraryManagement repository.
 
-Technology used:
+## Technology used:
 ---
 1.  ASP .NET CORE 6
 2.  HTML, CSS and JavaScript.
@@ -14,9 +14,10 @@ Technology used:
 
 
 ----------
-History:
+## History:
 
-Version 1.0.1 - Small refactoring on frontend layout
+#### Version 1.0.1 - Small refactoring on frontend layout
 
-Initial Version 1.0.0
+#### Initial Version 1.0.0
+
 ----------------
