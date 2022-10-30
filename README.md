@@ -16,5 +16,7 @@ Technology used:
 ----------
 History:
 
+Version 1.0.1 - Small refactoring on frontend layout
+
 Initial Version 1.0.0
 ----------------
