@@ -21,3 +21,9 @@ The website helps to manage the activity of a library / library in electronic fo
 #### Initial Version 1.0.0
 
 ----------------
+
+### Info
+
+THIS IMPLEMENTATION IS DEPRECATED !!!
+
+NEW VERSION IS AVAILABLE AT https://github.com/AndreeaDraghici/LibraryManagementVersion0.2
